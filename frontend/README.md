@@ -39,3 +39,5 @@ Navegar a `http://localhost:4200/`.
 **Credenciales simuladas:**
 - Correo: `admin@crud.com`
 - Clave: `admin`
+
+Actualización de documentación para el frontend
