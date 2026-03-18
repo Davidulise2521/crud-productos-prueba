@@ -43,3 +43,5 @@ El proyecto contiene pruebas unitarias (`@ExtendWith(MockitoExtension.class)`), 
 mvn clean test jacoco:report
 ```
 El reporte visual de cobertura se generará en: `/target/site/jacoco/index.html`.
+
+Actualización de documentación para el backend

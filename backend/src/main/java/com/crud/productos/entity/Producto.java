@@ -33,6 +33,6 @@ public class Producto {
     @Column(nullable = false)
     private Integer existencias;
 
-    @Column(nullable = false)
-    private Boolean activo;
+    @Column(nullable = false, columnDefinition = "boolean default true")
+    private Boolean activo = true;
 }
