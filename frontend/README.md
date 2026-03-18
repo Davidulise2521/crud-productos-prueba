@@ -1,27 +1,41 @@
-# Frontend
+# CRUD Productos - Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.2.
+Interfaz web desarrollada en **Angular 11** para el consumo de la API REST del CRUD de Productos. Utiliza **Bootstrap 5** para un diseño moderno, responsivo y ordenado.
 
-## Development server
+## Tecnologías Principales
+- **Angular CLI 11.0.7**
+- **Node.js 16**
+- **RxJS** (Manejo de asincronía y Observables)
+- **Bootstrap 5.3** (Vía CDN)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Arquitectura del Proyecto Frontend
+La aplicación fue diseñada siguiendo las especificaciones estrictas para mantener desacoplamiento:
+1. **Models (`/models`):** Contiene las interfaces TypeScript que replican los DTOs del servidor asegurando tipado fuerte.
+2. **Services (`/services`):** El `ProductoService` centraliza las peticiones `HttpClient` delegándolas a componentes, mientras que `AuthService` simula la sesión. Todos devuelven Observables.
+3. **Interceptors (`/interceptors`):** Se interceptan todas las peticiones salientes (`JwtInterceptor`) para incrustar el Token Bearer simulado automáticamente sin afectar la lógica individual.
+4. **Guards (`/guards`):** `AuthGuard` verifica las variables de entorno de sesión antes de que el router pinte las vistas.
+5. **Components (`/components`):** 
+   - `LoginComponent`: Simulación de autenticación local.
+   - `ProductoListComponent`: Renderiza la tabla de métricas y controles con paginación integrada.
+   - `ProductoFormComponent`: Módulo de control Reactivo y por Templates para la inserción y edición.
 
-## Code scaffolding
+## Instalación y Ejecución
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+*Nota: Requiere tener la API de Spring Boot encendida nativamente en `localhost:8080`.*
 
-## Build
+```bash
+# Entrar a la carpeta
+cd frontend
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+# Instalar los paquetes (Se usa legacy-peer-deps por ser versión estricta de Angular 11)
+npm install --legacy-peer-deps
 
-## Running unit tests
+# Compilar y arrancar el servidor en caliente
+npx -p @angular/cli@11 ng serve -o
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Navegar a `http://localhost:4200/`.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Credenciales simuladas:**
+- Correo: `admin@crud.com`
+- Clave: `admin`

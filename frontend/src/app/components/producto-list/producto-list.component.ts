@@ -4,6 +4,12 @@ import { Producto, AjusteInventario } from '../../models/producto';
 
 declare var bootstrap: any;
 
+/**
+ * Componente principal para el Listado de Productos.
+ * Funciona como un datatable que inyecta el `ProductoService` para
+ * recabar métricas y listados paginados. Además de controlar
+ * la apertura de modales para el ajuste de inventario y borrado lógico.
+ */
 @Component({
   selector: 'app-producto-list',
   templateUrl: './producto-list.component.html',

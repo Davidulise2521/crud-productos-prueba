@@ -12,6 +12,17 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * Controlador REST para la gestión de Productos.
+ * <p>
+ * Su única responsabilidad es exponer los Endpoints HTTP,
+ * capturar DTOs, validarlos mediante Validation (@Valid)
+ * y retornarlos con sus status correspondientes, delegando
+ * toda la lógica de negocio imperativa a {@link ProductoService}.
+ * 
+ * @author Pacheco Ramírez David Ulises
+ * @version 1.1
+ */
 @RestController
 @RequestMapping("/productos")
 @RequiredArgsConstructor

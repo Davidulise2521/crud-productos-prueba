@@ -13,6 +13,17 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+/**
+ * Implementación principal del Servicio de Productos.
+ * <p>
+ * Actúa como el núcleo de la aplicación, ejecutando las reglas
+ * de negocio de forma transaccional (@Transactional) aislando a la
+ * base de datos subyacente de la capa web.
+ * Aquí se validan condiciones complejas como prevención de
+ * existencias negativas o la unicidad validada de un nombre de producto.
+ * 
+ * @author Pacheco Ramírez David Ulises
+ */
 @Service
 @RequiredArgsConstructor
 public class ProductoServiceImpl implements ProductoService {

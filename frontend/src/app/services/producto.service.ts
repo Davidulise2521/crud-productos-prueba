@@ -3,6 +3,13 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Producto, AjusteInventario, PaginatedResponse } from '../models/producto';
 
+/**
+ * Servicio central para la gestión de Productos.
+ * <p>
+ * Provee métodos estables para realizar las llamadas HTTP (GET, POST, PUT, PATCH)
+ * hacia la API del backend usando Observables de RxJS.
+ * </p>
+ */
 @Injectable({
   providedIn: 'root'
 })
