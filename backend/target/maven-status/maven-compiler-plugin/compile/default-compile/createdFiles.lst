@@ -1,0 +1,13 @@
+com/crud/productos/dto/ProductoDTO.class
+com/crud/productos/CrudProductosApplication.class
+com/crud/productos/service/ProductoService.class
+com/crud/productos/exception/BadRequestException.class
+com/crud/productos/mapper/ProductoMapper.class
+com/crud/productos/exception/ResourceNotFoundException.class
+com/crud/productos/exception/GlobalExceptionHandler.class
+com/crud/productos/repository/ProductoRepository.class
+com/crud/productos/controller/ProductoController.class
+com/crud/productos/service/ProductoServiceImpl.class
+com/crud/productos/dto/ProductoCreacionDTO.class
+com/crud/productos/entity/Producto.class
+com/crud/productos/dto/AjusteInventarioDTO.class

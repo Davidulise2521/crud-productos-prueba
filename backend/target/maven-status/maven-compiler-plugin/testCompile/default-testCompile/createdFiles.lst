@@ -1,0 +1,3 @@
+com/crud/productos/service/ProductoServiceImplTest.class
+com/crud/productos/controller/ProductoControllerTest.class
+com/crud/productos/integration/ProductoIntegrationTest.class

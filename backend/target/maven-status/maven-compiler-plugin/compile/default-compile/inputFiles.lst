@@ -1,0 +1,13 @@
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/entity/Producto.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/service/ProductoServiceImpl.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/repository/ProductoRepository.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/mapper/ProductoMapper.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/dto/AjusteInventarioDTO.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/controller/ProductoController.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/dto/ProductoDTO.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/service/ProductoService.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/exception/GlobalExceptionHandler.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/exception/ResourceNotFoundException.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/CrudProductosApplication.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/exception/BadRequestException.java
+/home/pacheco/Desktop/practicasJava/crud-productos/backend/src/main/java/com/crud/productos/dto/ProductoCreacionDTO.java
